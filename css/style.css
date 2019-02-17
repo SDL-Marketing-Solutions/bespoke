@@ -301,7 +301,7 @@ icons {
     transform      : rotateZ(-39deg);
   }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 2000px) {
   
   .icons-nav {
     font-size  : 2em;
