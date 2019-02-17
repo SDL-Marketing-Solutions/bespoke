@@ -1,0 +1,109 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http : //www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>bespoke / home</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <body>
+
+    <div id="container">
+      <header>
+        <div id="logo"><img src="images/logo.jpg"/></div>
+        <div id="search">
+          <ul class="search-list">
+            <li>My account <span class="chevron"></span></li>
+            <li><input type="text" value="Search..." name="Search"></li>
+          </ul>
+        </div>
+      </header>
+
+      <nav class="nav-flex-container">
+        <ul class="nav nav-flex-item">
+          <li><a class="line" href="#">Home</a></li>
+          <li><a class="line" href="#">My Dashboard</a></li>
+          <li><a class="line" href="#">Content Planner</a></li>
+          <li><a class="line" href="#">Asset Library </a></li>
+          <li><a class="line" href="#">Work Management</a></li>
+          <li><a href="#">Self-Serve</a></li>
+        </ul>
+      </nav>
+
+      <section class="carousel">
+
+        <ul id="slides">
+          <li class="slide showing"><img src="images/hero.jpg"/></li>
+          <li class="slide"><img src="images/hero_1.png"/></li>
+        </ul>
+
+        <div class="carousel-panel">
+          <p id="welcome">Welcome to</p>
+          <p id="title">Be.Spoke</p>
+          <p id="subtitle">Your end-to-end workflow management system</p>
+          <div class="bg"></div>
+        </div>
+
+       <!--  <img alt="slide 1" src="images/hero.jpg"/> -->
+
+
+
+</section>
+<icons class="icons-flex-container">
+  <ul class="icons-nav icons-flex-item">
+    <li>
+      <ul>
+        <li><img class="icon icon-1" src="images/icon_1.jpg"/></li>
+        <li class="icon-title">My Dashboard</li>
+        <li class="icon-subtitle">My tasks and reporting</li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li><img class="icon" src="images/icon_2.jpg"/></li>
+        <li class="icon-title">Content Planner</li>
+        <li class="icon-subtitle">Content Planning and calendar</li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li><img class="icon" src="images/icon_3.jpg"></li>
+        <li class="icon-title">Asset Library</li>
+        <li class="icon-subtitle">Organise & distribute assets</li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li><img class="icon" src="images/icon_4.jpg"/></li>
+        <li class="icon-title">Work Management</li>
+        <li class="icon-subtitle">Channel production & coordination </li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li><img class="icon" src="images/icon_5.jpg"/></li>
+        <li class="icon-title">Self-serve</li>
+        <li class="icon-subtitle">Repurpose content & delivery</li>
+      </ul>
+    </li>
+  </ul>
+</icons>
+</div>
+<script>
+
+  var slides = document.querySelectorAll('#slides .slide');
+  var currentSlide = 0;
+  var slideInterval = setInterval(nextSlide,6000);
+
+  function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+  }
+
+
+</script>
+</body>
+</html>
+
