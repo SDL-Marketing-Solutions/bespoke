@@ -7,7 +7,7 @@ body {
   overflow : hidden;
   margin   : 0;
   padding  : 0;
-  min-width: 780px;
+  min-width: 900px;
 }
 
 * {
@@ -61,7 +61,7 @@ header {
   z-index     : 100;
   margin-top  : 106px;
   margin-left : 227px;
-  font-size   : 52px;
+  font-size   : 3.25em;
   color       : white;
 }
 
@@ -70,7 +70,7 @@ header {
   z-index     : 100;
   margin-top  : 316px;
   margin-left : 327px;
-  font-size   : 25px;
+  font-size   : 1.5em;
   color       : white;
 }
 
@@ -79,7 +79,7 @@ header {
   z-index     : 100;
   margin-top  : 163px;
   margin-left : 200px;
-  font-size   : 103px;
+  font-size   : 6.4em;
   color       : white;
 }
 
@@ -103,7 +103,7 @@ header {
 #search {
   float     : right;
   margin    : 0 1em;
-  font-size : 11px;
+  font-size : 0.68em;
 }
 
 .search-list li {
@@ -113,7 +113,7 @@ header {
 input {
   padding           : 5px;
   background-color  : black;
-  font-size         : 11px;
+  font-size         : 0.68em;
   color             : white;
   border            : none;
 
@@ -140,7 +140,7 @@ nav {
 }
 
 .nav {
-  font-size  : 12px;
+  font-size  : 0.75em;
   list-style : none;
 }
 
@@ -197,7 +197,7 @@ icons {
 }
 
 .icons-nav {
-  font-size  : 12px;
+  font-size  : 0.75em;
   text-align : center;
   list-style : none;
 }
@@ -252,6 +252,7 @@ icons {
   -webkit-transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+/*
 .icon-3:hover {
   width: 290px;
   height: 290px;
@@ -259,6 +260,7 @@ icons {
   background: url('../images/icon_3_inside_sprite.png') left center;
   animation: play 0.5s steps(11);
 }
+/*
 
 @keyframes play_ok {
   100% { background-position: -3190px; }
@@ -325,7 +327,7 @@ icons {
     z-index     : 100;
     margin-top  : 126px;
     margin-left : 83px;
-    font-size   : 35px;
+    font-size   : 2.2em;
     color       : white;
   }
 
@@ -334,7 +336,7 @@ icons {
     z-index     : 100;
     margin-top  : 270px;
     margin-left : 118px;
-    font-size   : 18px;
+    font-size   : 1.125em;
     color       : white;
   }
 
@@ -343,7 +345,7 @@ icons {
     z-index     : 100;
     margin-top  : 160px;
     margin-left : 60px;
-    font-size   : 80px;
+    font-size   : 5em;
     color       : white;
   }
 }
