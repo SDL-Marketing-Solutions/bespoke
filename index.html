@@ -4,6 +4,7 @@
 <head>
   
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>bespoke / home</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
@@ -106,6 +107,22 @@
     slides[currentSlide].className = 'slide showing';
   }
 
+/*
+  function previousSlide(){
+    slides[currentSlide].className = 'slide';
+    if(currentSlide === 0){
+      currentSlide = slides.length - 1;
+    }
+    else {
+      currentSlide = (currentSlide-1)%slides.length;
+    }
+    slides[currentSlide].className = 'slide showing';
+  }
+
+
+  var next = document.querySelector('#logo');
+  next.addEventListener('click', previousSlide);
+*/
  
 
 </script>
