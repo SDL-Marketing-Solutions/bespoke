@@ -28,6 +28,8 @@ a {
 header {
   height : 20px;
   width  : 100%;
+  max-width: 1550px;
+  margin: 0 auto;
 }
 
 #logo {
@@ -49,7 +51,7 @@ header {
 
 #search {
   float     : right;
-  margin    : 0 1em;
+  margin    : 0 4em;
   font-size : 0.68em;
 }
 
@@ -131,51 +133,85 @@ nav {
 }
 
 .carousel {
-  height     : 390px;
+  height     : 377px;
   width      : 100%;
+  max-width: 1550px;
   background : black;
+  margin:0 auto;
+
 }
 
 .carousel img {
-  height      : 390px;
-  width       : 1602px;
-  margin-left : 120px;
+  height      : 377px;
+  width       : 1550px;
+  margin:0;
 }
 
 .carousel-panel {
   position          : absolute;
   overflow          : hidden;
-  height            : 390px;
-  width             : 1000px;
-  background-color  : black;
+  height            : 377px;
+  width             : 850px;
+  background: transparent url("../images/carousel_panel_large.png") no-repeat left top;
+  background-size: 850px 377px;
+ 
+ /*
   -webkit-clip-path : polygon(0 0, 66% 0%, 100% 100%, 0% 100%);
   clip-path         : polygon(0 0, 66% 0%, 100% 100%, 0% 100%);
+  */
+}
+
+#carousel-arrow-next {
+  width             : 40px;
+  height            : 75px;
+  background: transparent url("../images/carousel-arrow.png") no-repeat left top;
+  background-size: 40px 75px;
+  position: relative;
+  top: 150px;
+  right: 25px;
+  transform: rotate(180deg);
+  cursor: pointer;
+  display: inline;
+  float: right;
+}
+
+#carousel-arrow-previous {
+  width             : 40px;
+  height            : 75px;
+  background: transparent url("../images/carousel-arrow.png") no-repeat left top;
+  background-size: 40px 75px;
+  position: relative;
+  top: 150px;
+  left: 25px;
+  cursor: pointer;
+  display: inline;
+  float: left;
 }
 
 #welcome {
   position    : absolute;
   z-index     : 100;
-  margin-top  : 106px;
-  margin-left : 227px;
-  font-size   : 3.25em;
+  margin-top  : 109px;
+  margin-left : 189px;
+  font-size   : 2.9em;
   color       : white;
 }
 
 #subtitle {
   position    : absolute;
   z-index     : 100;
-  margin-top  : 316px;
-  margin-left : 327px;
-  font-size   : 1.5em;
+  margin-top  : 290px;
+  margin-left : 282px;
+  font-size   : 1.4em;
   color       : white;
 }
 
 #title {
   position    : absolute;
   z-index     : 100;
-  margin-top  : 163px;
-  margin-left : 200px;
-  font-size   : 6.4em;
+  margin-top  : 155px;
+  margin-left : 172px;
+  font-size   : 5.8em;
   color       : white;
 }
 
@@ -329,27 +365,26 @@ nav {
 }
 
 
-@media only screen and (max-width: 1424px) {
+@media only screen and (max-width: 1280px) {
  
   .carousel img {
-    height      : 390px;
-    width       : 1602px;
-    margin-left : -220px;
+    height      : 377px;
+    width       : 1550px;
+    margin-left: -200px;
   }
 
   .carousel-panel {
-    height            : 390px;
     width             : 650px;
-    background-color  : black;
-    -webkit-clip-path : polygon(0 0, 47% 0%, 100% 100%, 0% 100%);
-    clip-path         : polygon(0 0, 47% 0%, 100% 100%, 0% 100%);
+    height            : 377px;
+    background: transparent url("../images/carousel_panel_medium.png") no-repeat left top;
+    background-size: 650px 377px;
   }
 
   #welcome {
     position    : absolute;
     z-index     : 100;
     margin-top  : 126px;
-    margin-left : 83px;
+    margin-left : 103px;
     font-size   : 2.2em;
     color       : white;
   }
@@ -358,7 +393,7 @@ nav {
     position    : absolute;
     z-index     : 100;
     margin-top  : 270px;
-    margin-left : 118px;
+    margin-left : 138px;
     font-size   : 1.125em;
     color       : white;
   }
@@ -367,7 +402,7 @@ nav {
     position    : absolute;
     z-index     : 100;
     margin-top  : 160px;
-    margin-left : 60px;
+    margin-left : 80px;
     font-size   : 5em;
     color       : white;
   }
