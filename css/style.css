@@ -51,8 +51,8 @@ header {
 
 #search {
   float     : right;
-  margin    : 0 4em;
-  font-size : 0.68em;
+  margin    : 2em 3em;
+  font-size : 0.7em;
 }
 
 .search-list li {
@@ -62,10 +62,8 @@ header {
 input {
   padding           : 5px;
   background-color  : black;
-  font-size         : 0.68em;
   color             : white;
   border            : none;
-
   border-decoration : none;
 }
 
